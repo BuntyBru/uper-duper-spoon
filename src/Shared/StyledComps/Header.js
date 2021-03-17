@@ -6,7 +6,7 @@ export const HeaderElement = styled.div`
   position: fixed;
   width: 100%;
   display: flex;
-
+  z-index: 1;
   & .image-holder {
     flex: 1;
     display: flex;

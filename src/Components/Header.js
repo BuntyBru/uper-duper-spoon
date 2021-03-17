@@ -11,8 +11,8 @@ const Header = () => {
 
       <div className="otherLinks">
         <button>Home</button>
-        <button>How it works</button>
-        <button>About us</button>
+        <button>Analytics</button>
+        <button>About</button>
       </div>
     </HeaderElement>
   );
