@@ -3,9 +3,11 @@ import Chartjs from "chart.js";
 import styled from "styled-components";
 
 const GraphParent = styled.div`
-  width: 1100px;
+  width: 550px;
   padding: 20px;
   position: relative;
+  margin: 20px 20px 20px;
+  background: #0f1218;
 `;
 
 const GraphPara = styled.div`
@@ -17,7 +19,7 @@ const GraphPara = styled.div`
 `;
 
 const chartConfig = {
-  type: "bar",
+  type: "line",
   data: {
     labels: [
       "Data A",
@@ -46,64 +48,64 @@ const chartConfig = {
       {
         label: "Count",
         data: [
-          22,
-          35,
-          12,
+          21,
           23,
-          45,
-          34,
-          28,
-          12,
-          34,
+          25,
+          31,
+          25,
+          44,
+          18,
+          22,
+          14,
           29,
           11,
           19,
           21,
-          25,
+          15,
           19,
-          17,
-          22,
-          29,
-          31,
-          44,
+          27,
+          32,
+          19,
+          21,
+          14,
         ],
         backgroundColor: [
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
         ],
         borderColor: [
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
-          "#ff7171",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
+          "#7eca9c",
         ],
         borderWidth: 2,
       },
@@ -167,7 +169,7 @@ const chartConfig = {
   },
 };
 
-function GraphPart() {
+function GraphPartTwo() {
   const chartRef = useRef(null);
   const [chartInstance, setChartInstance] = useState(null);
 
@@ -183,4 +185,4 @@ function GraphPart() {
   );
 }
 
-export default GraphPart;
+export default GraphPartTwo;
