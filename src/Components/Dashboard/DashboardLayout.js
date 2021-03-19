@@ -1,12 +1,13 @@
 import React from "react";
 import { Layout } from "../../Shared/StyledComps/Layout";
 import FirstSection from "./FirstSection/FirstSection";
+import SecondSection from "./SecondSection/SecondSection";
 
 function DashboardLayout() {
   return (
     <Layout>
       <FirstSection />
-      <FirstSection />
+      <SecondSection />
       <FirstSection />
     </Layout>
   );
